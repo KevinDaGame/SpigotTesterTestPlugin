@@ -1,13 +1,17 @@
 package io.github.jwdeveloper.spigot.SpigotTestTestPlugin;
 
 import io.github.jwdeveloper.spigot.tester.api.SpigotTest;
+import io.github.jwdeveloper.spigot.tester.api.TestContext;
 import io.github.jwdeveloper.spigot.tester.api.annotations.Test;
-import io.github.jwdeveloper.spigot.tester.api.assertions.SpigotAssertion;
+public class SimpleTest extends SpigotTest {
 
-public class SimpleTest implements SpigotTest {
+    public SimpleTest(TestContext testContext) {
+        super(testContext);
+    }
 
     @Test(name = "This is a simple test")
     public void testSimple() {
-        SpigotAssertion.shouldBeEqual(1, 2);
+        assertion(1).shouldBe(1);
+        System.out.println("This is a simple test");
     }
 }

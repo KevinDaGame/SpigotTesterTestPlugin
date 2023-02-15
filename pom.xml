@@ -77,7 +77,7 @@
         <dependency>
             <groupId>com.github.jwdeveloper</groupId>
             <artifactId>SpigotTester</artifactId>
-            <version>0.2.13-Release</version>
+            <version>1.0.0-Release</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
