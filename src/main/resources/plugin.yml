@@ -1,0 +1,4 @@
+name: SpigotTestTestPlugin
+version: '${project.version}'
+main: io.github.jwdeveloper.spigot.SpigotTestTestPlugin.SpigotTestTestPlugin
+api-version: 1.19
